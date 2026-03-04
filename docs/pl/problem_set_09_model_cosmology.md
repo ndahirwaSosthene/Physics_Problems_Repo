@@ -5,18 +5,15 @@
 ## Zadanie 1 – Model Ptolemeusza
 
 1. Zapisz ruch planety jako sumę:
-   - ruchu po deferencie (okrąg główny),
-   - ruchu po epicyklu.
-
+    - ruchu po deferencie (okrąg główny),
+    - ruchu po epicyklu.
    Przykładowy zapis parametryczny:
-
    $$
    x(t) = R \cos(\omega t) + r \cos(\Omega t)
    $$
    $$
    y(t) = R \sin(\omega t) + r \sin(\Omega t)
    $$
-
 2. Wyprowadź równania parametryczne toru.
 3. Zbadaj warunek występowania ruchu wstecznego (retrogradacji).
 4. Określ momenty zmiany kierunku ruchu w projekcji kątowej.
@@ -32,20 +29,16 @@
 ## Zadanie 2 – Model Kopernika
 
 1. Zaimplementuj ruch dwóch planet po okręgach wokół Słońca:
-
    $$
    \vec r_Z(t) = R_Z (\cos \omega_Z t, \sin \omega_Z t)
    $$
    $$
    \vec r_M(t) = R_M (\cos \omega_M t, \sin \omega_M t)
    $$
-
 2. Wyznacz położenie Marsa względem Ziemi:
-
    $$
    \vec r_{M/Z}(t) = \vec r_M(t) - \vec r_Z(t)
    $$
-
 3. Zidentyfikuj momenty retrogradacji.
 4. Porównaj tor względny z modelem epicyklicznym.
 
@@ -73,14 +66,11 @@
    $$
    r(\theta) = \frac{a(1-e^2)}{1 + e \cos \theta}
    $$
-
 2. Zmieniaj mimośród $e$ i obserwuj kształt toru.
 3. Numerycznie oblicz pole zakreślone w równych przedziałach czasu:
-
    $$
    A = \frac{1}{2} \int r^2 \, d\theta
    $$
-
 4. Zweryfikuj prawo równych pól.
 
 **HTML:**
@@ -95,18 +85,14 @@
 
 1. Wczytaj dane dla kilku planet $(a, T)$.
 2. Wykreśl zależność:
-
    $$
    T^2 \text{ w funkcji } a^3
    $$
-
 3. Wykonaj regresję liniową.
 4. Oszacuj stałą proporcjonalności z relacji:
-
    $$
    T^2 = C a^3
    $$
-
 5. Oceń jakość dopasowania ($R^2$).
 
 ---
@@ -114,26 +100,20 @@
 ## Zadanie 6 – Ruch dwóch ciał i barycentrum
 
 1. Zdefiniuj środek masy:
-
    $$
    \vec R = \frac{m_1 \vec r_1 + m_2 \vec r_2}{m_1 + m_2}
    $$
-
 2. Pokaż, że dla układu izolowanego:
-
    $$
    m_1 \vec r_1 + m_2 \vec r_2 = \text{const}
    $$
-
 3. Zapisz równania ruchu:
-
    $$
    m_1 \ddot{\vec r}_1 = - G \frac{m_1 m_2}{|\vec r_1 - \vec r_2|^3} (\vec r_1 - \vec r_2)
    $$
    $$
    m_2 \ddot{\vec r}_2 = - G \frac{m_1 m_2}{|\vec r_2 - \vec r_1|^3} (\vec r_2 - \vec r_1)
    $$
-
 4. Zbadaj zależność toru od stosunku mas $m_1/m_2$.
 
 **HTML:**
@@ -159,9 +139,9 @@ E = \frac{1}{2} m v^2 - \frac{GMm}{r}
 $$
 
 1. Zbadaj numerycznie przypadki:
-   - $E < 0$ (orbita związana),
-   - $E = 0$ (parabola),
-   - $E > 0$ (hiperbola).
+    - $E < 0$ (orbita związana),
+    - $E = 0$ (parabola),
+    - $E > 0$ (hiperbola).
 2. Określ warunki początkowe prowadzące do różnych typów orbit.
 
 **HTML:**
@@ -193,12 +173,7 @@ $$
 
 ## Zadanie 9 – Układ trzech ciał (problem klasyczny)
 
-1. Zapisz równania ruchu dla trzech mas:
-
-$$
-m_i \ddot{\vec r}_i = \sum_{j \ne i} -G \frac{m_i m_j}{|\vec r_i - \vec r_j|^3} (\vec r_i - \vec r_j)
-$$
-
+1. Zapisz równania ruchu dla trzech mas.
 2. Zaimplementuj metodę numeryczną (np. RK4).
 3. Zbadaj stabilność konfiguracji.
 
@@ -212,10 +187,9 @@ $$
 ## Zadanie 10 – Analiza stabilności i wielkości zachowanych
 
 1. Monitoruj dla układu trzech ciał:
-   - energię całkowitą $E(t)$,
-   - moment pędu $\vec L = \vec r \times m \vec v$,
-   - położenie środka masy.
-
+    - energię całkowitą $E(t)$,
+    - moment pędu $\vec L = \vec r \times m \vec v$,
+    - położenie środka masy.
 2. Oceń stabilność metody numerycznej.
 3. Porównaj różne kroki czasowe $\Delta t$.
 4. Zbadaj wpływ schematu całkowania na zachowanie orbit.
